@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="pass" value="sdvaerferv"/>
+  <parameter name="user" value="tesngParamtetrUser@gmail.com"/>
+  <test name="Test">
+    <parameter name="pass" value="sdvaerferv"/>
+    <parameter name="user" value="tesngParamtetrUser@gmail.com"/>
+    <classes>
+      <class name="testngpackage.TestOne"/>
+      <class name="testngpackage.TestTwo"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="pass" value="sdvaerferv"/>
+    <parameter name="user" value="tesngParamtetrUser@gmail.com"/>
+    <classes>
+      <class name="testngpackage.TestOne">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- testngpackage.TestOne -->
+      <class name="testngpackage.TestTwo">
+        <methods>
+          <include name="loginSuccess"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testngpackage.TestTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

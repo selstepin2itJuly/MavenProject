@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43410" started-at="2018-07-29T18:04:34Z" finished-at="2018-07-29T18:05:18Z">
+    <groups>
+      <group name="Functional">
+        <method signature="TestTwo.loginSuccess()[pri:1, instance:testngpackage.TestTwo@7823a2f9]" name="loginSuccess" class="testngpackage.TestTwo"/>
+      </group> <!-- Functional -->
+      <group name="functional">
+        <method signature="TestOne.testThree()[pri:2, instance:testngpackage.TestOne@51565ec2]" name="testThree" class="testngpackage.TestOne"/>
+      </group> <!-- functional -->
+      <group name="Reg">
+        <method signature="TestOne.testOne(java.lang.String, java.lang.String)[pri:1, instance:testngpackage.TestOne@51565ec2]" name="testOne" class="testngpackage.TestOne"/>
+        <method signature="TestOne.testTwo()[pri:3, instance:testngpackage.TestOne@51565ec2]" name="testTwo" class="testngpackage.TestOne"/>
+        <method signature="TestTwo.loginSuccess()[pri:1, instance:testngpackage.TestTwo@7823a2f9]" name="loginSuccess" class="testngpackage.TestTwo"/>
+      </group> <!-- Reg -->
+      <group name="sanity">
+        <method signature="TestTwo.loginSuccess()[pri:1, instance:testngpackage.TestTwo@7823a2f9]" name="loginSuccess" class="testngpackage.TestTwo"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Test" duration-ms="43410" started-at="2018-07-29T18:04:34Z" finished-at="2018-07-29T18:05:18Z">
+      <class name="testngpackage.TestTwo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testngpackage.TestTwo@7823a2f9]" name="beforeClass" is-config="true" duration-ms="12508" started-at="2018-07-29T14:05:02Z" finished-at="2018-07-29T14:05:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="loginSuccess()[pri:1, instance:testngpackage.TestTwo@7823a2f9]" name="loginSuccess" duration-ms="3176" started-at="2018-07-29T14:05:14Z" description="Successful Login " finished-at="2018-07-29T14:05:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:831)
+	at org.testng.Assert.assertNotEquals(Assert.java:836)
+	at testngpackage.TestTwo.loginSuccess(TestTwo.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testngpackage.TestTwo@7823a2f9]" name="afterClass" is-config="true" duration-ms="312" started-at="2018-07-29T14:05:17Z" finished-at="2018-07-29T14:05:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testngpackage.TestTwo -->
+      <class name="testngpackage.TestOne">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-07-29T14:04:34Z" finished-at="2018-07-29T14:04:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="beforeTest" is-config="true" duration-ms="7734" started-at="2018-07-29T14:04:34Z" finished-at="2018-07-29T14:04:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="beforeMethod" is-config="true" duration-ms="5218" started-at="2018-07-29T14:04:42Z" finished-at="2018-07-29T14:04:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testOne(java.lang.String, java.lang.String)[pri:1, instance:testngpackage.TestOne@51565ec2]" name="testOne" duration-ms="5662" started-at="2018-07-29T14:04:47Z" description="Login Function" finished-at="2018-07-29T14:04:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tesngParamtetrUser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdvaerferv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-29T14:04:53Z" finished-at="2018-07-29T14:04:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="beforeMethod" is-config="true" duration-ms="2078" started-at="2018-07-29T14:04:53Z" finished-at="2018-07-29T14:04:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testThree()[pri:2, instance:testngpackage.TestOne@51565ec2]" name="testThree" duration-ms="2040" started-at="2018-07-29T14:04:55Z" description="Refress the page" finished-at="2018-07-29T14:04:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-07-29T14:04:57Z" finished-at="2018-07-29T14:04:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1959" started-at="2018-07-29T14:04:57Z" finished-at="2018-07-29T14:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testTwo()[pri:3, instance:testngpackage.TestOne@51565ec2]" name="testTwo" duration-ms="2373" started-at="2018-07-29T14:04:59Z" description="Forgot Link" depends-on-methods="testngpackage.TestOne.testOne" finished-at="2018-07-29T14:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-29T14:05:02Z" finished-at="2018-07-29T14:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="afterTest" is-config="true" duration-ms="312" started-at="2018-07-29T14:05:18Z" finished-at="2018-07-29T14:05:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testngpackage.TestOne@51565ec2]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-07-29T14:05:18Z" finished-at="2018-07-29T14:05:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testngpackage.TestOne -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
