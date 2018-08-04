@@ -11,6 +11,7 @@ import SeleniumOne.BaseClass;
 
 public class ActionsClass {
 
+// This is Action Class
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver dr = BaseClass.init("chrome", "https://www.icicibank.com/");
 		//dr.findElement(By.xpath("//*[@id='gobutton']")).click();
